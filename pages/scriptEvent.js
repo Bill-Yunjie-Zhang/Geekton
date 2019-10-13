@@ -44,9 +44,34 @@ let upComming = events.filter(function(e){
 let OrderedPreviousEvent = setOrder(previous)
 let OrderedUpComing = setOrder(upComming)
 
-let OrderedPreviousEventCards = OrderedPreviousEvent.map(function(){
-	$("#wrapper").append()
+OrderedUpComing.forEach(e => {
+	$("#wrapper1").append(`<div class='animatedParent animateOnce' data-appear-top-offset='-50' id=geektonForum` + e.date.year + e.date.month + e.date.day + `>
+		<div class='animated fadeInUp' style="margin-top: 40px; margin-bottom: 40px; border: 2px solid #a8a8a8; padding: 20px; border-radius: 5px;">
+			<div style="width:100%; height: 1px; background-image: linear-gradient(to right, transparent, #333333, transparent); margin-top: 30px; margin-bottom:20px"></div>
+			<div style="width: 60%; float:left; padding: 20px;">
+				<h3 style="color: #333333">` + e.topic + `</h3>
+				<h4 style="color: #ff0000">`+ e.date.year + `.` + e.date.month + `.` + e.date.day +`</h4>
+				<p style="height:260px; overflow-y:scroll; ">` + e.trailer + `</p>
+			</div>
+			<img src="../` + e.img + `" width=40%>
+			<div style="width:100%; height: 1px; background-image: linear-gradient(to right, transparent, #333333, transparent); margin-top: 20px; margin-bottom:30px"></div>
+		</div>
+	</div>`)
+	$("#up-coming").append('<li style="margin-top: 5px; margin-bottom: 5px"><a href="#geektonForum' + e.date.year + e.date.month + e.date.day + '">' + e.topic + '</a></li>')
 })
 
-
-$("#wrapper").append()
+OrderedPreviousEvent.forEach(e => {
+	$("#wrapper1").append(`<div class='animatedParent animateOnce' data-appear-top-offset='-50' id=geektonForum` + e.date.year + e.date.month + e.date.day + `>
+		<div class='animated fadeInUp' style="margin-top: 40px; margin-bottom: 40px; border: 2px solid #a8a8a8; padding: 20px; border-radius: 5px;">
+			<div style="width:100%; height: 1px; background-image: linear-gradient(to right, transparent, #333333, transparent); margin-top: 30px; margin-bottom:20px"></div>
+			<div style="width: 60%; float:left; padding: 20px;">
+				<h3 style="color: #333333">` + e.topic + `</h3>
+				<h4 style="color: #a8a8a8">`+ e.date.year + `.` + e.date.month + `.` + e.date.day +`</h4>
+				<p style="height:260px; overflow-y:scroll; ">` + e.trailer + `</p>
+			</div>
+			<img src="../` + e.img + `" width=40%>
+			<div style="width:100%; height: 1px; background-image: linear-gradient(to right, transparent, #333333, transparent); margin-top: 20px; margin-bottom:30px"></div>
+		</div>
+	</div>`)
+	$("#previous-meetings").append('<li style="margin-top: 5px; margin-bottom: 5px"><a href="#geektonForum' + e.date.year + e.date.month + e.date.day + '">' + e.topic + '</a></li>')
+})
