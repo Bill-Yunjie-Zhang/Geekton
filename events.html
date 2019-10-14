@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/png" href="pics/favicon.png"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="animations.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Geekton</title>
+</head>
+<body>
+  <div style="height: 100%; width: 100%; margin: 0; padding: 0; overflow: hidden; position: fixed; z-index: 0;"><div id="particle-canvas"></div></div>
+
+  <div style="position:absolute; top: 100%; width:100%; background-color: #ffffff">
+    <header id="header" style="z-index: 99!important">
+      <div class="d-flex flex-column flex-md-row align-items-center p-3 navbar-dark bg-dark">
+        <img class="my-0 mr-md-auto" src="pics/Geekton-logo.png" width="50" height="50" alt="" style="margin-top: 0; margin-bottom: 0px">
+        <nav>
+          <a class="p-2 text-dark" href= "home.html">Home</a>
+          <a class="p-2 text-dark" href= "events.html">Events</a>
+          <a class="p-2 text-dark" href= "team.html">Team</a>
+          <a class="p-2 text-dark" href= "Join-us.html">Join us</a>
+        </nav>
+      </div>
+    </header>
+
+    <div id="side-menu">
+      <div id="index">
+        <h4><a href="#header"><img src="pics/Geekton-logo-high.png" style="border-radius: 100%" width="150px"></a></h4>
+        <h4>
+          <span style="color: #ff0000">Up Coming</span>
+          <ul id="up-coming"></ul>
+        </h4>
+        <h4>
+          <span style="color: #ffffff">Previous meetings</span>
+          <ul id="previous-meetings"></ul>
+        </h4>
+      </div>
+    </div>
+
+    <div id="content">
+      <div id="wrapper">
+
+        <div id="wrapper1">
+
+        </div>
+        <footer>
+          <p>&copy; 2019-2020 Forum&middot;Geekton</p>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="data/events.js"></script>
+  <script src="jquery.sticky.js"></script>
+  <script src="scriptEvent.js"></script>
+  <script src="script.js"></script>
+  <script src="css3-animate-it.js"></script>
+</body>
+</html>

@@ -53,7 +53,7 @@ OrderedUpComing.forEach(e => {
 				<h4 style="color: #ff0000">`+ e.date.year + `.` + e.date.month + `.` + e.date.day +`</h4>
 				<p style="height:260px; overflow-y:scroll; ">` + e.trailer + `</p>
 			</div>
-			<img src="../` + e.img + `" width=40%>
+			<img src="` + e.img + `" width=40%>
 			<div style="width:100%; height: 1px; background-image: linear-gradient(to right, transparent, #333333, transparent); margin-top: 20px; margin-bottom:30px"></div>
 		</div>
 	</div>`)
@@ -69,7 +69,7 @@ OrderedPreviousEvent.forEach(e => {
 				<h4 style="color: #a8a8a8">`+ e.date.year + `.` + e.date.month + `.` + e.date.day +`</h4>
 				<p style="height:260px; overflow-y:scroll; ">` + e.trailer + `</p>
 			</div>
-			<img src="../` + e.img + `" width=40%>
+			<img src="` + e.img + `" width=40%>
 			<div style="width:100%; height: 1px; background-image: linear-gradient(to right, transparent, #333333, transparent); margin-top: 20px; margin-bottom:30px"></div>
 		</div>
 	</div>`)

@@ -93,10 +93,13 @@
 var canvasDiv = document.getElementById('particle-canvas');
 var options = {
   particleColor: '#ffffff',
-  background: '../pics/cover.png',
+  background: 'pics/cover.png',
   interactive: true,
   speed: 'medium',
   density: 'high'
 };
 var particleCanvas = new ParticleNetwork(canvasDiv, options);
 
+$(document).ready(function(){
+  $("#header").sticky({topSpacing:0});
+});
