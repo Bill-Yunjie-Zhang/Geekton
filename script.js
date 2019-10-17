@@ -104,7 +104,7 @@ $(document).ready(function(){
   $("#header").sticky({topSpacing:0});
 });
 
-setTimeout(() => {
+$(window).load(function(){
     $("#overlay-intro").remove()
     $("body").removeClass("loadingpage")
-}, 3000);
+})
