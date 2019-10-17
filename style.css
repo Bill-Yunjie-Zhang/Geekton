@@ -374,3 +374,8 @@ label{
 .loadingpage{
   overflow: hidden
 }
+
+.background-image{
+  background-image: url("pics/back.png");
+  background-size: cover;
+}
