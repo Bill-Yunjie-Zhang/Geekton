@@ -103,3 +103,8 @@ var particleCanvas = new ParticleNetwork(canvasDiv, options);
 $(document).ready(function(){
   $("#header").sticky({topSpacing:0});
 });
+
+setTimeout(() => {
+    $("#overlay-intro").remove()
+    $("body").removeClass("loadingpage")
+}, 3000);

@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Geekton</title>
 </head>
-<body>
+<body class="loadingpage">
   <div style="height: 100%; width: 100%; margin: 0; padding: 0; overflow: hidden; position: fixed; z-index: 0;"><div id="particle-canvas"></div></div>
 
   <div style="position:absolute; top: 100%; width:100%; background-color: #ffffff">
@@ -144,6 +144,12 @@
           <p>&copy; 2019-2020 Forum&middot;Geekton</p>
         </footer>
       </div>
+    </div>
+  </div>
+  <div id="overlay-intro" class="float-middle">
+    <div id="loading-wrapper">
+      <div id="loading-text">LOADING</div>
+      <div id="loading-content"></div>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
