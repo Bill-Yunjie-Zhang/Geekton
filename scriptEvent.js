@@ -60,7 +60,7 @@ OrderedUpComing.forEach(e => {
 
 OrderedPreviousEvent.forEach(e => {
 	$("#wrapper1").append(`<div class='animatedParent animateOnce' data-appear-top-offset='-50' id=geektonForum` + e.date.year + e.date.month + e.date.day + `>
-		<div class='animated fadeInUp' style="margin-top: 40px; margin-bottom: 40px; border: 2px solid #a8a8a8; padding: 20px; border-radius: 5px; padding-top:80px; padding-bottom:50px">
+		<div class='animated fadeInUp' style="margin-top: 40px; margin-bottom: 40px; border: 2px solid #a8a8a8; border-radius: 5px;">
 			<div style="width: 60%; float:left; padding: 20px;">
 				<h3 style="color: #333333">` + e.topic + `</h3>
 				<h4 style="color: #a8a8a8">`+ e.date.year + `.` + e.date.month + `.` + e.date.day +`</h4>

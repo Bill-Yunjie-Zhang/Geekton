@@ -5,7 +5,8 @@
 
 body, html {
   height: 100%;
-  background-color: #ffffff
+  background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 .bg-dark{
@@ -35,7 +36,7 @@ nav .text-dark:active{
 #wrapper{
   width: 80%;
   margin: auto;
-  padding-top: 100px
+  padding-top: 80px
 }
 
 #side-menu{
@@ -57,8 +58,7 @@ nav .text-dark:active{
 }
 
 .picture{
-  width: 380px;
-  height: 280px
+  width: 100%;
 }
 
 .align-middle {
@@ -111,9 +111,10 @@ nav .text-dark:active{
 
 #title-our-goals{
   text-align: center; 
-  padding: 20px;
-  padding-bottom: 30px;
-  font-size: 60px
+  padding-top: 30px;
+  font-size: 60px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
 }
 
 #title-founders-letter{

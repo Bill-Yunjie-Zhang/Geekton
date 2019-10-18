@@ -32,9 +32,7 @@ nonFounders.forEach(e => {
 years.forEach(e => {
     $("#wrapper1").append(`<div class='animatedParent animateOnce' data-appear-top-offset='-50' id=teamMember` + e + `>
         <div class='animated fadeInUp' style="margin-top: 40px; margin-bottom: 40px; background-color: #a8a8a8; padding-top: 20px">
-            <div id="` + e + `memberCards" style="margin: auto; width: 75%">
-                <div style="width:100%; height: 1px; background-image: linear-gradient(to right, transparent, #333333, transparent); margin-top: 30px; margin-bottom:20px"></div>
-            </div>
+            <div id="` + e + `memberCards" style="margin: auto; width: 75%"></div>
         </div>
     </div>`)
     $("#teamMembers").append('<li style="margin-top: 5px; margin-bottom: 5px"><a href="#teamMember' + e + '">' + e + '</a></li>')
