@@ -119,19 +119,9 @@ nav .text-dark:active{
 
 #title-founders-letter{
   text-align: center; 
-  padding-top: 80px;
+  padding-top: 40px;
   padding-bottom: 40px;
   font-size: 60px 
-}
-
-
-
-#the-founders-letter{
-  width: 850px;
-  margin: auto;
-}
-#the-founders-letter p{
-  text-decoration: underline
 }
 
 footer{
@@ -373,7 +363,8 @@ label{
 }
 
 .loadingpage{
-  overflow: hidden
+  overflow: hidden;
+  position: fixed
 }
 
 .background-image{
